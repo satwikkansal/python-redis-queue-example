@@ -2,10 +2,12 @@ from rq import Queue
 from rq.job import Job
 from worker import conn
 
-q = Queue(connection=conn)
+
+q = Queue(name="some_queue", connection=conn)
 
 
 def add_to_queue(task, *args):
+    # Enqueue the job
     job = q.enqueue(task, *args)
     return job
 

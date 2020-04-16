@@ -1,3 +1,5 @@
+> A simple setup illustrating redis-queue based background task processing in Python. Supports heroku.
+
 ## Files
 
 - `app.py`: File that defines some API resources.

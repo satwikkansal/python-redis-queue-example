@@ -12,8 +12,8 @@ Welcome!
 
 This site has two GET resources;
 
-1. /getnum/<int> to queue a background task, the integer can be anything, doesn't matter. It returns a job ID.
-2. /status/<job_id> You can use the job id returned in the above resource to check the status of the job.
+1. `/getnums/<int>` to queue a background task, the integer can be anything, doesn't matter. It returns a job ID.
+2. `/status/<job_id>` You can use the job id returned in the above resource to check the status of the job.
 
 Every job takes 30 seconds to get executed (hardcoded sleep timer of 30s).
 """
